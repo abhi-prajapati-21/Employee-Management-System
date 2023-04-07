@@ -1,0 +1,40 @@
+.table-main
+{
+ margin-top: 70px; 
+}
+.table-container
+{
+  color: black;
+  width: 90%;  
+  font-size: 1rem;
+  margin: auto;
+}
+thead
+{
+ background-color: moccasin;
+
+}
+th, td{
+    text-align: start;
+    padding: 5px 5px;
+    
+}
+tr:nth-child(even){
+    background-color: #dddddda2;
+}
+.table-main > button
+{
+  background-color: dodgerblue;
+  color: white;  
+  border: none;
+  border-radius: 3px;
+  padding: 7px 13px;
+  transition: .2s;
+  margin-bottom: 20px;
+ float: left;
+ margin-left: 50px;
+}
+.table-main button:active
+{
+ background-color: rgb(15, 78, 141);
+}

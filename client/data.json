@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Abhi",
+      "age": "22",
+      "role": " Web Developer"
+    },
+    {
+      "name": "Ashok",
+      "age": "25",
+      "role": " Full stack Developer"
+    },
+    {
+      "name": "Aman",
+      "age": "24",
+      "role": " Web Designer"
+    }
+]

@@ -1,0 +1,30 @@
+tr td:last-child
+{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ margin-top: 1px;
+ row-gap: 4px;
+}
+tr td:last-child button
+{
+  background-color: dodgerblue;
+  color: white;  
+  border: none;
+  border-radius: 3px;
+  padding: 4px 9px;
+  transition: .2s;
+  cursor: pointer;
+}
+tr td:last-child button:active
+{
+ background-color: rgb(15, 78, 141);
+}
+.dlt-btn
+{
+ background-color: #DF2E38 !important; 
+}
+.dlt-btn:active
+{
+  background-color: #970e0e !important;
+}

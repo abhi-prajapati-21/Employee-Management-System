@@ -1,0 +1,32 @@
+nav 
+{
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+  padding: 7px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: seagreen;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav h1
+{
+  font-weight: 500;
+  margin: 0;  
+}
+nav input{
+    padding: 6px 7px;
+    border-radius: 4px;
+    border: 1px solid seagreen;
+    background-color: whitesmoke;
+    color: seagreen;
+    outline: none;
+    flex-grow: .7;
+}
+nav input::placeholder
+{
+ color: rgba(46, 139, 86, 0.521);    
+}
