@@ -3,7 +3,7 @@ export const addEmployeeRequest = async (formData) => {
 
     try {
 
-      await fetch("http://localhost:5000/employee/add", {
+      await fetch("https://employee-management-system-omqz.onrender.com/employee/add", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
@@ -17,7 +17,7 @@ export const addEmployeeRequest = async (formData) => {
 export const fetchEmployeesRequest = async () => {
 
     try {
-      return await fetch("http://localhost:5000/employee/fetchEmployees")
+      return await fetch("https://employee-management-system-omqz.onrender.com/employee/fetchEmployees")
       .then((data) => data.json())
       .then((result) =>  result);
     } catch (error) {
@@ -29,7 +29,7 @@ export const fetchEmployeesRequest = async () => {
 export const deleteEmpRequest = async (id) => {
 
   try {
-    return await fetch(`http://localhost:5000/employee/delete/${id}`, { method: 'DELETE' } );
+    return await fetch(`https://employee-management-system-omqz.onrender.com/employee/delete/${id}`, { method: 'DELETE' } );
   } catch (error) {
     console.log(error);
     return [];
@@ -39,7 +39,7 @@ export const updateEmpRequest = async (id, formData) => {
 
   try {
 
-    await fetch(`http://localhost:5000/employee/update/${id}`, {
+    await fetch(`https://employee-management-system-omqz.onrender.com/employee/update/${id}`, {
     method: "PUT",
     body: JSON.stringify(formData),
     headers: {
