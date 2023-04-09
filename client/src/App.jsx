@@ -10,6 +10,10 @@ const Table = React.lazy(() => import("./components/Table/Table"));
 export const Context = createContext('');
 
 function App() {
+ 
+  useEffect(() => {
+    fetchEmpDetails();
+  }, []);
 
   const [isActive, setIsActive] = useState(false);
   const [isActiveUpdate, setIsActiveUpdate] = useState(false);
@@ -24,9 +28,6 @@ function App() {
     setupdateEmpId(empInfo)
   }
 
-  useEffect(() => {
-    fetchEmpDetails();
-  }, []);
 
   const value =useMemo(() => ({
     isActive,
